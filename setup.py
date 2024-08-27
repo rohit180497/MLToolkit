@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="MLEssentials",
-    version="1.0",
+    version="1.1",
     description="A toolkit to install essential machine learning libraries with one command.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
