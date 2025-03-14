@@ -22,7 +22,6 @@ pip install MLEssentials
 ## Usage
 Here’s a quick example of how to use MLEssentials in your machine learning project:
 
-
 ```python
 # Importing necessary libraries from MLEssentials
 import pandas as pd
