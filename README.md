@@ -16,10 +16,10 @@
 **MLEssentials** is a comprehensive Python package designed to streamline the setup and execution of machine learning workflows. It **installs essential libraries automatically** and provides **ready-to-use import statements**, helping developers and data scientists **focus on solving ML problems rather than managing dependencies**.
 
 ### Why Use MLEssentials?
-✅ **Saves Time** - Install all critical ML libraries with one command.
-✅ **Pre-configured Imports** - Prints commonly used import statements post-installation for quick access.
-✅ **Supports End-to-End ML Workflows** - From data preprocessing to model deployment.
-✅ **Versatile** - Suitable for beginners, researchers, and industry professionals.
+- ✅ **Saves Time** - Install all critical ML libraries with one command.
+- ✅ **Pre-configured Imports** - Prints commonly used import statements post-installation for quick access.
+- ✅ **Supports End-to-End ML Workflows** - From data preprocessing to model deployment.
+- ✅ **Versatile** - Suitable for beginners, researchers, and industry professionals.
 
 ## 🔹 Features
 
