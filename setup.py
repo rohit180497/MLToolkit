@@ -1,9 +1,12 @@
 from setuptools import setup, find_packages
+from setuptools.command.install import install
 import os
 
-# Run post-install script
-def post_install():
-    os.system("python -m MLEssentials.post_install")
+class PostInstallCommand(install):
+    """Post-installation for installation mode."""
+    def run(self):
+        install.run(self)  # Run the standard install
+        os.system("python -m MLEssentials.post_install")  # Execute the post-install script
 
 setup(
     name="MLEssentials",
@@ -14,7 +17,6 @@ setup(
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/rohit180497/MLToolkit",
-    license="MIT",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -78,7 +80,7 @@ setup(
         ]
     },
     cmdclass={
-        'install': post_install,
+        'install': PostInstallCommand,
     },
     project_urls={
         "Bug Tracker": "https://github.com/rohit180497/MLToolkit/issues",
@@ -86,4 +88,3 @@ setup(
         "Source Code": "https://github.com/rohit180497/MLToolkit"
     },
 )
-
